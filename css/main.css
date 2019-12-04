@@ -20,9 +20,10 @@ body {
 
 .robot {
   width: 320px;
-  padding-top: 4em;
+  padding-top: 3.5em;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 }
 
 .robot-body {
@@ -32,21 +33,31 @@ body {
 .robot-brain {
   width: 46px;
   position: absolute;
-  left: 33.95em;
+  left: 136px;
+  top: 67px;
 }
 
 .robot-head-right,
 .robot-head-left {
-  width: 125px;
   position: absolute;
 }
 
 .robot-head-right {
-  top: 1.7em;
-  left: 35.45em;
+  position: absolute;
+  left: 160px;
+  top: 20px;
 }
 
 .robot-head-left {
-  top: 1.7em;
-  left: 27.65em;
+  position: absolute;
+  left: 35px;
+  top: 20px;
+}
+
+.robot:hover .robot-head-right {
+  left: 195px;
+}
+
+.robot:hover .robot-head-left {
+  left: 0;
 }
